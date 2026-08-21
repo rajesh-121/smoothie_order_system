@@ -1,0 +1,187 @@
+.page {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #e8fff9, #fff8d8);
+}
+.card {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 20px 60px #075e5420;
+}
+.card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3f5f0;
+}
+.card header h1 {
+  text-align: left;
+  color: #073f41;
+}
+.card header small {
+  color: #ff5c6c;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+.card header button {
+  border: 0;
+  background: none;
+  color: #08766e;
+}
+.list article {
+  display: grid;
+  grid-template-columns: 92px 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #e3efec;
+}
+.list img {
+  width: 92px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.list h2,
+.list p {
+  margin: 0.2rem 0;
+  text-align: left;
+}
+.list small {
+  color: #52928b;
+}
+.itemNutrition {
+  margin-top: 0.35rem;
+  color: #6a7f7c;
+  font-size: 0.72rem;
+}
+.nutritionTotal {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #effbf8;
+}
+.nutritionTotal h3 {
+  margin: 0 0 0.65rem;
+  color: #073f41;
+  font-size: 0.95rem;
+}
+.nutritionTotal > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.nutritionTotal span,
+.nutritionTotal b {
+  display: block;
+}
+.nutritionTotal span {
+  color: #66817d;
+  font-size: 0.72rem;
+}
+.nutritionTotal b {
+  margin-top: 0.15rem;
+  color: #073f41;
+  font-size: 0.9rem;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qty button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: #dff7f1;
+  color: #073f41;
+  font-weight: 900;
+}
+.card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+}
+.cancel {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ff8c96;
+  border-radius: 999px;
+  background: #fff;
+  color: #c73c4a;
+}
+.card footer > div {
+  text-align: right;
+}
+.card footer strong {
+  display: block;
+  font-size: 2rem;
+  color: #073f41;
+}
+.card footer > div button,
+.done button {
+  padding: 0.85rem 1.3rem;
+  border: 0;
+  border-radius: 999px;
+  background: #073f41;
+  color: #fff;
+}
+.card button:disabled {
+  opacity: 0.4;
+}
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: #78938f;
+}
+.done {
+  max-width: 520px;
+  margin: 5rem auto;
+  padding: 3rem;
+  border-radius: 30px;
+  background: #ffcf4b;
+  text-align: center;
+  color: #073f41;
+}
+.done > span {
+  font-size: 5rem;
+}
+.done strong {
+  display: block;
+  font-size: 4rem;
+}
+@media (max-width: 650px) {
+  .card {
+    padding: 1rem;
+  }
+  .card header {
+    display: block;
+  }
+  .list article {
+    grid-template-columns: 70px 1fr;
+  }
+  .list img {
+    width: 70px;
+    height: 60px;
+  }
+  .list article > b,
+  .list article > .qty {
+    grid-column: 2;
+  }
+  .card footer {
+    display: block;
+  }
+  .cancel {
+    margin-bottom: 1rem;
+  }
+  .card footer > div {
+    text-align: left;
+  }
+  .nutritionTotal > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

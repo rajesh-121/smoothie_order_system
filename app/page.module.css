@@ -1,0 +1,304 @@
+.hero {
+  min-height: 390px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 8%;
+  color: #073f41;
+  background:
+    linear-gradient(270deg, #baf7edf2, #baf7ed88 48%, transparent),
+    url("/banner.png") center/cover;
+}
+.hero div {
+  width: 48%;
+}
+.hero h1 {
+  margin: 0;
+  color: #ff5c6c;
+  font:
+    900 clamp(4rem, 10vw, 9rem) / 0.82 Arial Black,
+    sans-serif;
+}
+.hero small {
+  letter-spacing: 0.25em;
+}
+.main {
+  max-width: 1240px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+.discovery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.discovery label {
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #b7ddd6;
+  border-radius: 999px;
+  background: #fff;
+}
+.clearSearch {
+  padding: 0 0.35rem !important;
+  background: transparent !important;
+  font-size: 1.15rem;
+}
+.discovery input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+.discovery div {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.discovery button,
+.fruitStrip button {
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  border-radius: 999px;
+  background: #def6f0;
+  color: #07524f;
+}
+.fruitStrip .fruitActive {
+  background: #073f41;
+  color: #fff;
+}
+.fruitStrip .resetFilters {
+  margin-left: auto;
+  border: 1px solid #ff8c96;
+  background: #fff;
+  color: #b72f40;
+}
+.discovery .active {
+  background: #073f41;
+  color: #fff;
+}
+.fruitStrip {
+  display: flex;
+  gap: 0.55rem;
+  margin: 1.2rem 0;
+  overflow: auto;
+}
+.fruitStrip button {
+  background: #ffcf4b;
+  white-space: nowrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.grid article {
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 12px 30px #087a6819;
+}
+.pic {
+  height: 210px;
+  position: relative;
+}
+.pic img {
+  object-fit: cover;
+}
+.pic > span {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #073f41;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.cardBody {
+  padding: 1rem;
+}
+.cardBody > small {
+  color: #16877d;
+}
+.cardBody h2 {
+  margin: 0.45rem 0;
+  text-align: left;
+  color: #073f41;
+  font-size: 1.25rem;
+}
+.cardBody p {
+  min-height: 2.7em;
+  color: #58736f;
+  font-size: 0.88rem;
+}
+.options {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.7rem;
+  border-radius: 14px;
+  background: #effbf8;
+}
+.options > div,
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.options b {
+  min-width: 64px;
+  font-size: 0.72rem;
+}
+.options button,
+.options select {
+  padding: 0.38rem 0.55rem;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #073f41;
+  font-size: 0.75rem;
+}
+.options .on {
+  background: #ffcf4b;
+}
+.nutrition {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+.nutrition span {
+  padding: 0.45rem 0.25rem;
+  border-radius: 10px;
+  background: #fff8da;
+  text-align: center;
+}
+.nutrition small,
+.nutrition b {
+  display: block;
+}
+.nutrition small {
+  color: #66817d;
+  font-size: 0.58rem;
+}
+.nutrition b {
+  margin-top: 0.15rem;
+  color: #073f41;
+  font-size: 0.72rem;
+}
+.cardBody footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+.cardBody footer > b {
+  font-size: 1.2rem;
+  color: #073f41;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: #073f41;
+  color: #fff;
+}
+.qty button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: #ff5c6c;
+  color: #fff;
+  font-size: 1.15rem;
+}
+.qty button:disabled {
+  opacity: 0.35;
+}
+.qty span {
+  min-width: 38px;
+  text-align: center;
+  font-size: 0.78rem;
+}
+.cartBar {
+  position: sticky;
+  bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 24px;
+  background: #ffcf4b;
+  box-shadow: 0 14px 35px #60490025;
+  color: #073f41;
+}
+.cartBar div {
+  display: flex;
+  flex-direction: column;
+}
+.cartBar strong {
+  font-size: 1.25rem;
+}
+.cartBar button {
+  padding: 0.8rem 1.2rem;
+  border: 0;
+  border-radius: 999px;
+  background: #073f41;
+  color: #fff;
+}
+.cartBar button:disabled {
+  opacity: 0.45;
+}
+.noResult {
+  text-align: center;
+  padding: 3rem;
+}
+.main button {
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .discovery {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .discovery label {
+    min-width: 0;
+  }
+  .hero div {
+    width: 60%;
+  }
+}
+@media (max-width: 620px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    min-height: 300px;
+  }
+  .hero div {
+    width: 68%;
+  }
+  .cartBar {
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .options b {
+    min-width: 56px;
+  }
+  .nutrition {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
