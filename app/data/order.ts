@@ -10,6 +10,35 @@ export type OrderItem = {
   unitPrice: number;
   nutrition: Nutrition;
 };
+export type FulfilmentMethod = "pickup" | "delivery";
+export type PaymentMethod = "card" | "cash" | "wallet";
+export type OrderStatus = "confirmed" | "preparing" | "ready" | "out-for-delivery" | "completed" | "cancelled";
+export type CustomerDetails = {
+  name: string;
+  email: string;
+  phone: string;
+  address: string;
+  notes: string;
+};
+export type SavedOrder = {
+  id: string;
+  createdAt: string;
+  items: OrderItem[];
+  customer: CustomerDetails;
+  fulfilment: FulfilmentMethod;
+  payment: PaymentMethod;
+  status: OrderStatus;
+  subtotal: number;
+  discount: number;
+  deliveryFee: number;
+  tax: number;
+  total: number;
+};
+export const ORDER_HISTORY_KEY = "smoothieOrders";
+export const CART_KEY = "smoothieCart";
+export const DELIVERY_FEE = 250;
+export const TAX_RATE = 0.1;
+export const PROMO_CODES: Record<string, number> = { FRESH10: 0.1, PULSE15: 0.15 };
 export const sizeExtra: Record<Size, number> = { S: -80, M: 0, L: 120 };
 export const boosterExtra: Record<Booster, number> = {
   なし: 0,

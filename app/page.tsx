@@ -282,6 +282,7 @@ export default function Page() {
           >
             CHECK OUT →
           </button>
+          <button onClick={() => router.push("/orders")}>MY ORDERS</button>
         </section>
       </main>
     </>
